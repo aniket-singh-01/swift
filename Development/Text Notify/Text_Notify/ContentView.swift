@@ -23,7 +23,7 @@ struct ContentView: View {
                 }
             }
 
-            // Example: Sending a notification every 3 seconds
+            // Example: Sending a notification
             TimerView(interval: 2*60*60) {
                 if let randomText = self.texts.randomElement() {
                     NotificationManager.shared.sendNotification(
