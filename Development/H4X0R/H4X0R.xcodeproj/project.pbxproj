@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F797ED162B15FE680098A28A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797ED152B15FE680098A28A /* NetworkManager.swift */; };
+		F797ED182B15FFFE0098A28A /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797ED172B15FFFE0098A28A /* PostData.swift */; };
+		F797ED1B2B160E7F0098A28A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797ED1A2B160E7F0098A28A /* DetailView.swift */; };
+		F797ED1F2B16130C0098A28A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797ED1E2B16130C0098A28A /* WebView.swift */; };
 		F7E947AF2AEE8070002077B3 /* H4X0RApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E947AE2AEE8070002077B3 /* H4X0RApp.swift */; };
 		F7E947B12AEE8070002077B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E947B02AEE8070002077B3 /* ContentView.swift */; };
 		F7E947B32AEE8071002077B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E947B22AEE8071002077B3 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F797ED152B15FE680098A28A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F797ED172B15FFFE0098A28A /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		F797ED1A2B160E7F0098A28A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F797ED1E2B16130C0098A28A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		F7E947AB2AEE8070002077B3 /* H4X0R.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H4X0R.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E947AE2AEE8070002077B3 /* H4X0RApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H4X0RApp.swift; sourceTree = "<group>"; };
 		F7E947B02AEE8070002077B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F797ED142B15FE420098A28A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F797ED152B15FE680098A28A /* NetworkManager.swift */,
+				F797ED172B15FFFE0098A28A /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F797ED192B160E6D0098A28A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7E947B02AEE8070002077B3 /* ContentView.swift */,
+				F797ED1E2B16130C0098A28A /* WebView.swift */,
+				F797ED1A2B160E7F0098A28A /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F7E947A22AEE806F002077B3 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				F7E947AE2AEE8070002077B3 /* H4X0RApp.swift */,
-				F7E947B02AEE8070002077B3 /* ContentView.swift */,
+				F797ED192B160E6D0098A28A /* View */,
+				F797ED142B15FE420098A28A /* Models */,
 				F7E947B22AEE8071002077B3 /* Assets.xcassets */,
 				F7E947B42AEE8071002077B3 /* Preview Content */,
 			);
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F797ED162B15FE680098A28A /* NetworkManager.swift in Sources */,
+				F797ED182B15FFFE0098A28A /* PostData.swift in Sources */,
 				F7E947B12AEE8070002077B3 /* ContentView.swift in Sources */,
+				F797ED1F2B16130C0098A28A /* WebView.swift in Sources */,
+				F797ED1B2B160E7F0098A28A /* DetailView.swift in Sources */,
 				F7E947AF2AEE8070002077B3 /* H4X0RApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,9 +301,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R/Preview Content\"";
+				DEVELOPMENT_TEAM = 7QWTHDK38K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -286,6 +320,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aniket.H4X0R;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,9 +333,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R/Preview Content\"";
+				DEVELOPMENT_TEAM = 7QWTHDK38K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -314,6 +352,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aniket.H4X0R;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
