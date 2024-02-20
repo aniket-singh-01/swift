@@ -62,7 +62,7 @@ class ToDoListViewController:  UITableViewController {
             do{
                 try realm.write{
                     item.done = !item.done
-//                    realm.delete(item)
+                    //                    realm.delete(item)
                 }
             }
             catch{
@@ -121,20 +121,19 @@ class ToDoListViewController:  UITableViewController {
         todoItems=selectedCategory?.items.sorted(byKeyPath: "title",ascending: true)
         
     }
-    //
-    //
+
 }
 extension ToDoListViewController: UISearchBarDelegate{
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         todoItems=todoItems?.filter("title CONTAINS[cd] %@", searchBar.text).sorted(byKeyPath: "dateCreated",ascending: true)
         tableView.reloadData()
     }
-
+    
     
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text?.count==0{
-              loadItem()
+            loadItem()
             
             DispatchQueue.main.async {
                 searchBar.resignFirstResponder()
