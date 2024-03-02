@@ -6,7 +6,6 @@
 //  Copyright © 2019 Angela Yu. All rights reserved.
 //
 
-
 import UIKit
 import Firebase
 
@@ -60,6 +59,7 @@ class ChatViewController: UIViewController {
             }
         }
     }
+    
     @IBAction func sendPressed(_ sender: UIButton) {
         
         if let messageBody = messageTextfield.text, let messageSender = Auth.auth().currentUser?.email {
@@ -108,14 +108,14 @@ extension ChatViewController: UITableViewDataSource {
         //This is a message from the current user.
         if message.sender == Auth.auth().currentUser?.email {
             cell.leftImageView.isHidden = true
-            cell.rightImagevView.isHidden = false
+            cell.rightImageView.isHidden = false
             cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
             cell.label.textColor = UIColor(named: K.BrandColors.purple)
         }
         //This is a message from another sender.
         else {
             cell.leftImageView.isHidden = false
-            cell.rightImagevView.isHidden = true
+            cell.rightImageView.isHidden = true
             cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.purple)
             cell.label.textColor = UIColor(named: K.BrandColors.lightPurple)
         }
