@@ -16,10 +16,11 @@ Simple and intuitive user interface for easy task management.
 Upon launching the application, users are presented with a list of tasks. To add a new task, tap on the "+" button and enter the task details. To delete a task, swipe left on the task and tap on the delete button. To update a task, tap on the task and edit the details. Tasks are saved automatically and can be accessed anytime.
 
 ## Screenshots
+<p align="center">
+  <img src="./Todoey/Images/1.png" alt="Size Limit example"
+       width="381" height="662">
+  <img src="/Todoey/Images/2.png" alt="Size Limit example"
+       width="381" height="662">
+</p>
 
-
-![Screenshot 1](Todoey/Images/1.png?raw=true)
-![Screenshot 2](Todoey/Images/2.png?raw=true)
-![Screenshot 3](Todoey/Images/3.png?raw=true)
-![Screenshot 4](Todoey/Images/4.png?raw=true)
 
