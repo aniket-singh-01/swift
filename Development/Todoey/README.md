@@ -18,9 +18,9 @@ Upon launching the application, users are presented with a list of tasks. To add
 ## Screenshots
 
 
-![Screenshot 1](Development/Todoey/Todoey/Images/1.png?raw=true)
-![Screenshot 2](Development/Todoey/Todoey/Images/2.png?raw=true)
-![Screenshot 3](Development/Todoey/Todoey/Images/3.png?raw=true)
-![Screenshot 4](Development/Todoey/Todoey/Images/4.png?raw=true)
+![Screenshot 1](Todoey/Images/1.png?raw=true)
+![Screenshot 2](Todoey/Images/2.png?raw=true)
+![Screenshot 3](Todoey/Images/3.png?raw=true)
+![Screenshot 4](Todoey/Images/4.png?raw=true)
 
 

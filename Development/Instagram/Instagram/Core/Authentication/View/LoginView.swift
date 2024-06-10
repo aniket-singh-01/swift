@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
+
+    @StateObject var viewModel=LoginViewModel()
     
-    @State private var email=""
-    @State private var password=""
+    
     var body: some View {
         NavigationStack {
             VStack{
@@ -23,20 +24,12 @@ struct LoginView: View {
                 
                 // text field
                 VStack{
-                    TextField("Enter your email", text: $email)
+                    TextField("Enter your email", text: $viewModel.email)
                         .autocapitalization(.none)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal,24)
+                        .modifier(IGTextFieldModifier())
                     
-                   SecureField("Enter your password", text: $password)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal,24)
+                    SecureField("Enter your password", text: $viewModel.password)
+                        .modifier(IGTextFieldModifier())
                 }
                 
                 Button {
@@ -51,7 +44,7 @@ struct LoginView: View {
                 .frame(maxWidth: .infinity,alignment: .trailing)
                 
                 Button {
-                    print("Login")
+                    Task{ try await viewModel.signIn() }
                 } label: {
                     Text("Login")
                         .font(.subheadline)
@@ -85,7 +78,9 @@ struct LoginView: View {
                 Divider()
      
                 NavigationLink{
-                  Text("Sign up")
+                  AddEmailView()
+                        
+                        .navigationBarBackButtonHidden(true)
                 } label:{
                     HStack(spacing: 3) {
                         Text("Don't have an account?")
