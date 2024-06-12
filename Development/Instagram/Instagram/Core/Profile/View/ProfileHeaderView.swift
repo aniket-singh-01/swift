@@ -47,7 +47,7 @@ struct ProfileHeaderView: View {
                     
                     
                 }
-                Text(user.username)
+               
             }
             .frame(maxWidth: .infinity,alignment: .leading)
             .padding(.horizontal)
