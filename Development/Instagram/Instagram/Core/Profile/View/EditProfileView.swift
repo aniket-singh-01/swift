@@ -15,6 +15,7 @@ struct EditProfileView: View {
     
     init(user: User){
         self._viewModel=StateObject(wrappedValue: EditProfileViewModel(user: user))
+        
     }
     var body: some View {
         VStack{
@@ -34,6 +35,7 @@ struct EditProfileView: View {
                     
                     Button {
                         Task{ try await viewModel.updateUserData()}
+                        dismiss()
                     } label: {
                         Text("done")
                             .font(.subheadline)
@@ -58,12 +60,7 @@ struct EditProfileView: View {
                             .frame(width: 80, height: 80)
                     }
                     else{
-                        Image(systemName: "person")
-                            .resizable()
-                            .foregroundColor(.white)
-                            .background(Color.gray)
-                            .clipShape(Circle())
-                            .frame(width: 80, height: 80)
+                        CircularImageProfileView(user: viewModel.user,size: .large)
                     }
                     
                     Text("Edit profile picture")

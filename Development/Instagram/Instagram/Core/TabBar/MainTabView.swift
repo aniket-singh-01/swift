@@ -5,7 +5,10 @@
 //  Created by Aniket Singh on 20/03/24.
 //
 
+import Foundation
+import PhotosUI
 import SwiftUI
+import Firebase
 
 struct MainTabView: View {
     let user: User
@@ -28,8 +31,9 @@ struct MainTabView: View {
                     Image(systemName: "magnifyingglass")
                 }
                 .tag(1)
-            
-            UploadPostView( tabIndex: $selectedIndex)
+     
+         
+            UploadPostView(tabIndex: $selectedIndex)
                 .onAppear(){
                     selectedIndex=2
                 }
