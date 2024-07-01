@@ -14,6 +14,8 @@ struct MainTabView: View {
     let user: User
     @State private var selectedIndex=0
     var body: some View {
+        let viewModel = EditProfileViewModel(user: user)
+        
         TabView(selection: $selectedIndex) {
             FeedView()
                 .onAppear(){
@@ -49,7 +51,7 @@ struct MainTabView: View {
                     Image(systemName: "heart")
                 }.tag(3)
             
-            CurrentUserProfileView(user: user)
+            CurrentUserProfileView(viewModel: viewModel)
                 .onAppear(){
                     selectedIndex=4
                 }

@@ -6,25 +6,23 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct CurrentUserProfileView: View {
-    let user : User
-    var posts:[Post]{
-        return Post.MOCK_POSTS.filter({$0.user?.username==user.username})
-    }
+    @StateObject var viewModel: EditProfileViewModel
     
     var body: some View {
         NavigationStack {
-            ScrollView{
-                //header
-                ProfileHeaderView(user: user)
+            ScrollView {
+                // Header
+                ProfileHeaderView(user: viewModel.user)
                 
-                //post grid View
-                PostGridView(user: user)
+                // Post Grid View
+                PostGridView(user: viewModel.user)
             }
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar{
+            .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         AuthService.shared.signOut()
@@ -32,7 +30,13 @@ struct CurrentUserProfileView: View {
                         Image(systemName: "line.3.horizontal")
                             .foregroundStyle(.black)
                     }
-                    
+                }
+            }
+            .refreshable {
+                do {
+                    try await viewModel.fetchUpdatedUserData()
+                } catch {
+                    print("Unable to load posts")
                 }
             }
         }
@@ -40,6 +44,7 @@ struct CurrentUserProfileView: View {
 }
 
 
+
 #Preview {
-    CurrentUserProfileView(user: User.MOCK_USERS[0])
+    CurrentUserProfileView(viewModel: EditProfileViewModel(user: User.MOCK_USERS[0]))
 }

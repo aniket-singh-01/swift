@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestore
 
 struct FeedView: View {
+    
     @StateObject var viewModel = FeedViewModel()
     var body: some View {
         NavigationStack {
@@ -31,6 +34,13 @@ struct FeedView: View {
                     Image(systemName: "paperplane")
                         .imageScale(.large)
                 }
+            }
+        }
+        .refreshable {
+            do {
+                try await viewModel.fetchPosts()
+            } catch {
+                print("Unable to load posts")
             }
         }
     }

@@ -35,12 +35,16 @@ struct EditProfileView: View {
                     
                     Button {
                         Task{ try await viewModel.updateUserData()}
+                       
                         dismiss()
+                       
                     } label: {
                         Text("done")
                             .font(.subheadline)
                             .fontWeight(.bold)
+                        
                     }
+                    
                 }
                 .padding(.horizontal)
                 Divider()
@@ -83,6 +87,7 @@ struct EditProfileView: View {
             Spacer()
             
         }
+        
     }
 }
 struct EditProfileRowView: View {
