@@ -48,7 +48,7 @@ struct MainTabView: View {
                     selectedIndex=3
                 }
                 .tabItem {
-                    Image(systemName: "heart")
+                    Image(systemName: "play.rectangle")
                 }.tag(3)
             
             CurrentUserProfileView(viewModel: viewModel)

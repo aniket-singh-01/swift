@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F70D686F2BAB2969003E3EA7 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D686E2BAB2969003E3EA7 /* FeedView.swift */; };
 		F70D68712BAB2972003E3EA7 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D68702BAB2972003E3EA7 /* FeedCell.swift */; };
+		F71106DF2C3874AE005F2028 /* MessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71106DE2C3874AE005F2028 /* MessageBox.swift */; };
 		F72AE8DC2BB7459700226140 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AE8DB2BB7459700226140 /* AddEmailView.swift */; };
 		F746C4632C208F7200C8213B /* CircularImageProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F746C4622C208F7200C8213B /* CircularImageProfileView.swift */; };
 		F746C4652C20902200C8213B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F746C4642C20902200C8213B /* Kingfisher */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		F70D686E2BAB2969003E3EA7 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		F70D68702BAB2972003E3EA7 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		F71106DE2C3874AE005F2028 /* MessageBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBox.swift; sourceTree = "<group>"; };
 		F72AE8DB2BB7459700226140 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		F746C4622C208F7200C8213B /* CircularImageProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageProfileView.swift; sourceTree = "<group>"; };
 		F75BA63D2BA9D9F70094BEC4 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F71106DD2C387420005F2028 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				F71106DE2C3874AE005F2028 /* MessageBox.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
 		F75BA6342BA9D9F70094BEC4 = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +282,7 @@
 				F7AFB95F2BAAB84600D02061 /* Authentication */,
 				F7AFB96E2BAACA0F00D02061 /* Components */,
 				F7AFB9602BAAB85000D02061 /* Feed */,
+				F71106DD2C387420005F2028 /* Message */,
 				F7AFB9612BAAB85400D02061 /* Profile */,
 				F7AFB9672BAAB8C700D02061 /* Root */,
 				F7AFB9682BAAB8CC00D02061 /* Search */,
@@ -540,6 +551,7 @@
 				F799BEF52BF66BF000CF6858 /* SearchViewModel.swift in Sources */,
 				F7AFB96B2BAAB93400D02061 /* MainTabView.swift in Sources */,
 				F7A1A4442BD2B11700346004 /* CreatePasswordView.swift in Sources */,
+				F71106DF2C3874AE005F2028 /* MessageBox.swift in Sources */,
 				F77165F62C20B9F800BCDBE3 /* UploadPostViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

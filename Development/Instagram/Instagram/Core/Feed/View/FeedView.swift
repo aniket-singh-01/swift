@@ -31,8 +31,15 @@ struct FeedView: View {
                         .frame(width: 100,height: 45 )
                 }
                 ToolbarItem(placement: .topBarTrailing) {
-                    Image(systemName: "paperplane")
+                    Image(systemName: "heart")
                         .imageScale(.large)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink(destination: MessageBox()) {
+                        Image(systemName: "paperplane")
+                            .imageScale(.large)
+                    }
+                    
                 }
             }
         }
