@@ -16,34 +16,34 @@ Persistent Data Storage
 <table>
   <tr>
     <td>
-      <img src="./Instagram/ScreenShots/login.png" alt="Login Screen" width="200"/>
+      <img src="./Todoey/ScreenShots/1.png" alt="Login Screen" width="200"/>
       <br>
       <em>Login Screen</em>
     </td>
     <td>
-      <img src="./Instagram/ScreenShots/feed.png" alt="Feed Screen" width="200"/>
+      <img src="./Todoey/ScreenShots/2.png" alt="Feed Screen" width="200"/>
       <br>
       <em>Feed Screen</em>
     </td>
     <td>
-      <img src="./Instagram/ScreenShots/profile.png" alt="Profile Screen" width="200"/>
+      <img src="./Todoey/ScreenShots/3.png" alt="Profile Screen" width="200"/>
       <br>
       <em>Profile Screen</em>
     </td>
   </tr>
   <tr>
     <td>
-      <img src="./Instagram/ScreenShots/edit_profile.png" alt="Profile Edit Screen" width="200"/>
+      <img src="./Todoey/ScreenShots/edit_profile.png" alt="Profile Edit Screen" width="200"/>
       <br>
       <em>Profile Edit Screen</em>
     </td>
     <td>
-      <img src="./Instagram/ScreenShots/users.png" alt="Users Screen" width="200"/>
+      <img src="./Todoey/ScreenShots/users.png" alt="Users Screen" width="200"/>
       <br>
       <em>Users Screen</em>
     </td>
     <td>
-      <img src="./Instagram/ScreenShots/upload.png" alt="Post Upload Screen" width="200"/>
+      <img src="./Todoey/ScreenShots/upload.png" alt="Post Upload Screen" width="200"/>
       <br>
       <em>Post Upload Screen</em>
     </td>
