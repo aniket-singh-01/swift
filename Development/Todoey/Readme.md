@@ -1,5 +1,5 @@
 
-#Todoey
+# Todoey
 
 Todoey is a task management app built using SwiftUI for iOS. The app allows users to create, manage, and organize their to-do lists efficiently.
 
@@ -51,13 +51,13 @@ Persistent Data Storage
 </table>
 
 
-##Requirements
+## Requirements
 
 iOS 14.0+
 Xcode 12.0+
 Swift 5.0+
 
-##Installation
+## Installation
 
 1. Clone the repository:
     ```bash
@@ -73,27 +73,27 @@ Swift 5.0+
     ```
 4. Run the project on a simulator or a connected device.
 
-##Usage
+## Usage
 
 Add tasks by clicking the "Add" button.
 Organize tasks into different categories.
 Mark tasks as complete by tapping on them.
 Search for tasks using the search bar.
 
-##Technologies Used
+## Technologies Used
 
 Swift
 SwiftUI
 Realm
 
-##Contributing
+## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
 
-##License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-##Contact
+## Contact
 
 For any questions or suggestions, feel free to open an issue or contact me directly at dev.swiftnook@gmail.com
