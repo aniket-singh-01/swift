@@ -16,7 +16,7 @@ Persistent Data Storage
 <table>
   <tr>
     <td>
-      <img src="./Todoey/ScreenShots/1.png" alt="Login Screen" width="200"/>
+      <img src="./swift/Development/Todoey/screenshots/1.png" alt="Login Screen" width="200"/>
       <br>
       <em>Login Screen</em>
     </td>
