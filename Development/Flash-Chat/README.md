@@ -13,24 +13,24 @@ This is a Flash-Chat app built using SwiftUI for iOS. The app allows users to se
 <table>
   <tr>
     <td>
-      <img src="./FlashChat/ScreenShots/home.png" alt="Home" width="200"/>
+      <img src="./Flash Chat iOS13/ScreenShots/home.png" alt="Home" width="200"/>
       <br>
       <em>Home</em>
     </td>
     <td>
-      <img src="./FlashChat/ScreenShots/register.png" alt="Register" width="200"/>
+      <img src="./Flash Chat iOS13/ScreenShots/register.png" alt="Register" width="200"/>
       <br>
       <em>Register Screen</em>
     </td>
     <td>
-      <img src="./FlashChat/ScreenShots/login.png" alt="Login Screen" width="200"/>
+      <img src="./Flash Chat iOS13/ScreenShots/login.png" alt="Login Screen" width="200"/>
       <br>
       <em>Login Screen</em>
     </td>
   </tr>
   <tr>
     <td>
-      <img src="./FlashChat/ScreenShots/chat.png" alt="Chat Screen" width="200"/>
+      <img src="./Flash Chat iOS13/ScreenShots/chat.png" alt="Chat Screen" width="200"/>
       <br>
       <em>Chat Screen</em>
     </td>
