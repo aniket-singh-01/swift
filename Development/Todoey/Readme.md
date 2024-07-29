@@ -16,36 +16,31 @@ Persistent Data Storage
 <table>
   <tr>
     <td>
-      <img src="./swift/Development/Todoey/screenshots/1.png" alt="Login Screen" width="200"/>
+      <img src="./Todoey/Images/1.png" alt="Home" width="200"/>
       <br>
-      <em>Login Screen</em>
+      <em>Home</em>
     </td>
     <td>
-      <img src="./Todoey/ScreenShots/2.png" alt="Feed Screen" width="200"/>
+      <img src="./Todoey/Images/5.png" alt="Add category" width="200"/>
       <br>
-      <em>Feed Screen</em>
+      <em>Add category</em>
     </td>
     <td>
-      <img src="./Todoey/ScreenShots/3.png" alt="Profile Screen" width="200"/>
+      <img src="./Todoey/Images/2.png" alt="Categories" width="200"/>
       <br>
-      <em>Profile Screen</em>
+      <em>Categories</em>
     </td>
   </tr>
   <tr>
     <td>
-      <img src="./Todoey/ScreenShots/edit_profile.png" alt="Profile Edit Screen" width="200"/>
+      <img src="./Todoey/Images/3.png" alt="Sub Categories" width="200"/>
       <br>
-      <em>Profile Edit Screen</em>
+      <em>Sub Categories</em>
     </td>
     <td>
-      <img src="./Todoey/ScreenShots/users.png" alt="Users Screen" width="200"/>
+      <img src="./Todoey/Images/4.png" alt="Delete" width="200"/>
       <br>
-      <em>Users Screen</em>
-    </td>
-    <td>
-      <img src="./Todoey/ScreenShots/upload.png" alt="Post Upload Screen" width="200"/>
-      <br>
-      <em>Post Upload Screen</em>
+      <em>Delete</em>
     </td>
   </tr>
 </table>
