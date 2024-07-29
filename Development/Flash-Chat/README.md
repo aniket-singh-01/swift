@@ -16,25 +16,23 @@ This is a Flash-Chat app built using SwiftUI for iOS. The app allows users to se
       <img src="./FlashChat/ScreenShots/home.png" alt="Home" width="200"/>
       <br>
       <em>Home</em>
-      
     </td>
     <td>
-          <img src="./FlashChat/ScreenShots/register.png" alt="Register" width="200"/>
+      <img src="./FlashChat/ScreenShots/register.png" alt="Register" width="200"/>
       <br>
       <em>Register Screen</em>
     </td>
     <td>
-    <img src="./FlashChat/ScreenShots/login.png" alt="Login Screen" width="200"/>
+      <img src="./FlashChat/ScreenShots/login.png" alt="Login Screen" width="200"/>
       <br>
       <em>Login Screen</em>
     </td>
   </tr>
   <tr>
     <td>
-          <img src="./FlashChat/ScreenShots/chat.png" alt="Chat Screen" width="200"/>
+      <img src="./FlashChat/ScreenShots/chat.png" alt="Chat Screen" width="200"/>
       <br>
       <em>Chat Screen</em>
-  
     </td>
   </tr>
 </table>
@@ -73,7 +71,7 @@ This is a Flash-Chat app built using SwiftUI for iOS. The app allows users to se
 - Swift
 - SwiftUI
 - UIKit
-- Firebase 
+- Firebase
 
 ## Contributing
 
@@ -86,4 +84,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any questions or suggestions, feel free to open an issue or contact me directly at dev.swiftnook@gmail.com
-
