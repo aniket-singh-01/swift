@@ -1,55 +1,89 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
-
 # Flash-Chat
 
-## Our Goal
+This is a Flash-Chat app built using SwiftUI for iOS. The app allows users to send and receive messages in real-time, providing a seamless chat experience.
 
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
+## Features
 
-## What you will create
+- User Authentication (Sign Up, Login, Logout)
+- Real-time Messaging
+- User Profiles
 
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
+## Screenshots
 
-## What you will learn
+<table>
+  <tr>
+    <td>
+      <img src="./FlashChat/ScreenShots/home.png" alt="Home" width="200"/>
+      <br>
+      <em>Home</em>
+      
+    </td>
+    <td>
+          <img src="./FlashChat/ScreenShots/register.png" alt="Register" width="200"/>
+      <br>
+      <em>Register Screen</em>
+    </td>
+    <td>
+    <img src="./FlashChat/ScreenShots/login.png" alt="Login Screen" width="200"/>
+      <br>
+      <em>Login Screen</em>
+    </td>
+  </tr>
+  <tr>
+    <td>
+          <img src="./FlashChat/ScreenShots/chat.png" alt="Chat Screen" width="200"/>
+      <br>
+      <em>Chat Screen</em>
+  
+    </td>
+  </tr>
+</table>
 
-* How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
-* How to store data in the cloud using Firebase Firestore.
-* How to query and sort the Firebase database.
-* How to use Firebase for user authentication, registration and login.
-* How to work with UITableViews and how to set their data sources and delegates.
-* How to create custom views using .xib files to modify native design components.
-* How to embed View Controllers in a Navigation Controller and understand the navigation stack.
-* How to create a constants file and use static properties to store Strings and other constants.
-* Learn about Swift loops and create animations using loops.
-* Learn about the App Lifecycle and how to use viewWillAppear or viewWillDisappear.
-* How to create direct Segues for navigation.
+## Requirements
 
+- iOS 14.0+
+- Xcode 12.0+
+- Swift 5.0+
 
-# Constants
-```
-struct K {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat"
-    static let loginSegue = "LoginToChat"
-    
-    struct BrandColors {
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lighBlue = "BrandLightBlue"
-    }
-    
-    struct FStore {
-        static let collectionName = "messages"
-        static let senderField = "sender"
-        static let bodyField = "body"
-        static let dateField = "date"
-    }
-}
+## Installation
 
-```
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/aniket-singh-01/swift.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd swift/Development/Flash-Chat
+    ```
+3. Open the project in Xcode:
+    ```bash
+    open flashchat.xcodeproj
+    ```
+4. Run the project on a simulator or a connected device.
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+## Usage
 
-![End Banner](Documentation/readme-end-banner.png)
+1. Sign up or log in with your credentials.
+2. Join or create a chat room.
+3. Start sending and receiving messages in real-time.
+4. Edit your profile by visiting the profile section.
+
+## Technologies Used
+
+- Swift
+- SwiftUI
+- UIKit
+- Firebase 
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or suggestions, feel free to open an issue or contact me directly at dev.swiftnook@gmail.com
+
